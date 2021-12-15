@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="538.0" prefWidth="578.0">
+         <children>
+            <TextField fx:id="txtAntall" layoutX="215.0" layoutY="99.0" />
+            <TextField fx:id="txtSoner" layoutX="215.0" layoutY="170.0" />
+            <Label layoutX="72.0" layoutY="103.0" prefHeight="26.0" prefWidth="75.0" text="Antall" />
+            <Label layoutX="72.0" layoutY="179.0" prefHeight="26.0" prefWidth="75.0" text="Antall soner" />
+            <Label layoutX="56.0" layoutY="240.0" prefHeight="26.0" prefWidth="166.0" text="Rabatt (Barn,student, honør)" />
+            <Button layoutX="56.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnBeregn" prefHeight="26.0" prefWidth="109.0" text="Beregn pris" />
+            <Label fx:id="lblResultat" layoutX="312.0" layoutY="293.0" prefHeight="18.0" prefWidth="60.0" />
+            <Label fx:id="lblFeilSoner" layoutX="219.0" layoutY="206.0" prefHeight="18.0" prefWidth="142.0" />
+            <Label fx:id="lblFeilAntall" layoutX="214.0" layoutY="132.0" prefHeight="18.0" prefWidth="150.0" />
+            <CheckBox fx:id="chkRabatt" layoutX="223.0" layoutY="245.0" mnemonicParsing="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

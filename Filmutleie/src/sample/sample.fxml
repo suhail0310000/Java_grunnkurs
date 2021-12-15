@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="520.0" prefWidth="602.0">
+         <children>
+            <Label layoutX="83.0" layoutY="127.0" prefHeight="18.0" prefWidth="77.0" text="Kundenavn" />
+            <Label layoutX="83.0" layoutY="199.0" prefHeight="18.0" prefWidth="78.0" text="Kundens tlfnr" />
+            <Label layoutX="83.0" layoutY="260.0" prefHeight="18.0" prefWidth="78.0" text="Filmtittel" />
+            <TextField fx:id="inpKundeNavn" layoutX="195.0" layoutY="124.0" />
+            <TextField fx:id="inpTlf" layoutX="195.0" layoutY="195.0" />
+            <TextField fx:id="inpFilm" layoutX="195.0" layoutY="256.0" />
+            <Button layoutX="195.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnLeiut" text="Lei ut" />
+            <Button layoutX="328.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnLeverInn" prefHeight="26.0" prefWidth="78.0" text="Lever inn" />
+            <Button layoutX="195.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnUtleie" text="Vis utleie" />
+            <Label fx:id="lblUt" layoutX="83.0" layoutY="399.0" prefHeight="102.0" prefWidth="302.0" text="Oversikt over utleie" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
